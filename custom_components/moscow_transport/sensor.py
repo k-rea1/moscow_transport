@@ -6,6 +6,9 @@ import logging
 
 import voluptuous as vol
 
+import asyncio
+import random
+
 from homeassistant.components.sensor import (
     PLATFORM_SCHEMA,
     SensorDeviceClass,
