@@ -90,6 +90,7 @@ class DiscoverMoscowTransport(SensorEntity):
 
     async def async_update(self, *, tries=0):
         """Get the latest data from maps.yandex.ru and update the states."""
+        await asyncio.sleep(random.uniform(0.5, 2.5))
         attrs = {}
 
         try:
